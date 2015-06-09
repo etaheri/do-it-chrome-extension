@@ -1,0 +1,35 @@
+{
+  "name": "DO IT!",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "description": "For when you need motivation! Shia LaBeouf delivers the most intense motivational speech of all-time IN YOUR BROWSER! ",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "default_locale": "en",
+  "permissions": [
+    "activeTab",
+    "tabs", "http://*/*", "https://*/*"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_icon": "icons/icon19.png",
+    "default_title": "DO IT"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*", "https://*/*"
+      ],
+      "css": [
+        "inject.css"
+      ]
+    }
+
+  ]
+}
