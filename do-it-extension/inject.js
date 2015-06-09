@@ -3,7 +3,7 @@ if(videoEl == null){
 	var div = document.createElement('div');
 	document.body.appendChild(div);
 	div.className = 'shia-do-it';
-	div.innerHTML = '<div class="container"><video height="540px" autoplay="" name="media"><source type="video/webm"></video></div>'
+	div.innerHTML = '<div class="container"><video width="960" height="540" autoplay="" name="media"><source type="video/webm"></video></div>'
 	var video = document.querySelector('.shia-do-it .container video');
 	video.style.visibility = "hidden";
 	video.src = "http://etaheri.github.io/output.webm";
